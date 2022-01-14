@@ -1,11 +1,10 @@
-a=int(input())
+a=input()
 b=''
-d=a
-while a>0:
-    c=a%10
-    b=b+str(c)
-    a=a//10
-if d==int(b):
+c=len(a)
+while c>0:
+    b=b+a[c-1]
+    c=c-1
+if b==a:
     print('palindrome')
 else:
     print('not palindrome')
